@@ -63,9 +63,9 @@ def main():
 
         if optiune == "1":
             print("lista nr. 1:")
-            l = citireLista()
+            lst1 = citireLista()
             print("lista nr. 2:")
-            lst = citireLista()
+            lst2 = citireLista()
         elif optiune == "2":
             print(lst1)
             print(lst2)
