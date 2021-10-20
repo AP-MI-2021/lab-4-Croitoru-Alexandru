@@ -55,7 +55,8 @@ def main():
     while True:
         print("1. Citire lista int-uri")
         print("2. Afisare lista")
-        print("3. Aflati daca cele 2 liste au acelasi numar de elemente")
+        print("3. Afisare lista cu aceleasi nr de elemente pare")
+        print("4. Aflati daca cele 2 liste au acelasi numar de elemente")
         print("x. Iesire")
 
         optiune = input("Dati optiunea:")
@@ -69,6 +70,11 @@ def main():
             print(lst1)
             print(lst2)
         elif optiune == "3":
+            if listaElementePare(lst1) == listaElementePare(lst2):
+                print("Au acelasi nr de elemente pare")
+            else:
+                print("Nu au acelasi nr de elemente pare")
+        elif optiune == "4":
             print("Intersectia celor doua liste:", intersectiaListelor(lst1,lst2))
         elif optiune == "x":
             break
